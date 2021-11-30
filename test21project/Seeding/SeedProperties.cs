@@ -25,6 +25,7 @@ namespace test21project.Seeding
                 p1.ZipCode = "72227";
                 p1.State = States.PA;
                 p1.Street = "8714 Mann Plaza";
+                p1.UnitNumber = "";
                 p1.City = "Lisaside";
                 p1.HostEmail = "gonzalez@aol.com";
                 p1.WeekendPrice = 171.57m;
@@ -35,6 +36,7 @@ namespace test21project.Seeding
                 p1.Bedrooms = 5;
                 p1.Bathrooms = 6;
                 p1.GuestsAllowed = 9;
+                p1.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -63,6 +65,7 @@ namespace test21project.Seeding
                 p2.Bedrooms = 7;
                 p2.Bathrooms = 8;
                 p2.GuestsAllowed = 8;
+                p2.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -91,6 +94,7 @@ namespace test21project.Seeding
                 p3.Bedrooms = 5;
                 p3.Bathrooms = 7;
                 p3.GuestsAllowed = 8;
+                p3.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -119,10 +123,11 @@ namespace test21project.Seeding
                 p4.Bedrooms = 1;
                 p4.Bathrooms = 3;
                 p4.GuestsAllowed = 14;
+                p4.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
-                p4.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p4.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p4);
 
 
@@ -136,6 +141,7 @@ namespace test21project.Seeding
                 p5.ZipCode = "63315";
                 p5.State = States.DE;
                 p5.Street = "39916 Mitchell Crescent";
+                p5.UnitNumber = "";
                 p5.City = "New Andrewburgh";
                 p5.HostEmail = "loter@yahoo.com";
                 p5.WeekendPrice = 100.37m;
@@ -146,6 +152,7 @@ namespace test21project.Seeding
                 p5.Bedrooms = 2;
                 p5.Bathrooms = 3;
                 p5.GuestsAllowed = 12;
+                p5.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -163,6 +170,7 @@ namespace test21project.Seeding
                 p6.ZipCode = "24135";
                 p6.State = States.NE;
                 p6.Street = "086 Mary Cliff";
+                p6.UnitNumber = "";
                 p6.City = "North Deborah";
                 p6.HostEmail = "rice@yahoo.com";
                 p6.WeekendPrice = 162.6m;
@@ -173,6 +181,7 @@ namespace test21project.Seeding
                 p6.Bedrooms = 7;
                 p6.Bathrooms = 9;
                 p6.GuestsAllowed = 2;
+                p6.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -201,6 +210,7 @@ namespace test21project.Seeding
                 p7.Bedrooms = 1;
                 p7.Bathrooms = 2;
                 p7.GuestsAllowed = 9;
+                p7.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -218,6 +228,7 @@ namespace test21project.Seeding
                 p8.ZipCode = "10865";
                 p8.State = States.WA;
                 p8.Street = "6984 Price Shoals";
+                p8.UnitNumber = "";
                 p8.City = "Erictown";
                 p8.HostEmail = "tanner@utexas.edu";
                 p8.WeekendPrice = 140.89m;
@@ -228,6 +239,7 @@ namespace test21project.Seeding
                 p8.Bedrooms = 2;
                 p8.Bathrooms = 3;
                 p8.GuestsAllowed = 8;
+                p8.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -245,6 +257,7 @@ namespace test21project.Seeding
                 p9.ZipCode = "51359";
                 p9.State = States.ME;
                 p9.Street = "423 Bell Heights";
+                p9.UnitNumber = "";
                 p9.City = "Brittanyberg";
                 p9.HostEmail = "rice@yahoo.com";
                 p9.WeekendPrice = 295.39m;
@@ -255,6 +268,7 @@ namespace test21project.Seeding
                 p9.Bedrooms = 3;
                 p9.Bathrooms = 3;
                 p9.GuestsAllowed = 4;
+                p9.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -272,6 +286,7 @@ namespace test21project.Seeding
                 p10.ZipCode = "87296";
                 p10.State = States.WI;
                 p10.Street = "93523 Dana Lane";
+                p10.UnitNumber = "";
                 p10.City = "Johnsonshire";
                 p10.HostEmail = "ingram@gmail.com";
                 p10.WeekendPrice = 110.8m;
@@ -282,6 +297,7 @@ namespace test21project.Seeding
                 p10.Bedrooms = 6;
                 p10.Bathrooms = 6;
                 p10.GuestsAllowed = 3;
+                p10.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -299,6 +315,7 @@ namespace test21project.Seeding
                 p11.ZipCode = "7035";
                 p11.State = States.NH;
                 p11.Street = "1427 Odonnell Rapids";
+                p11.UnitNumber = "";
                 p11.City = "North Troyport";
                 p11.HostEmail = "jacobs@yahoo.com";
                 p11.WeekendPrice = 126.29m;
@@ -309,6 +326,7 @@ namespace test21project.Seeding
                 p11.Bedrooms = 3;
                 p11.Bathrooms = 3;
                 p11.GuestsAllowed = 14;
+                p11.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -337,6 +355,7 @@ namespace test21project.Seeding
                 p12.Bedrooms = 3;
                 p12.Bathrooms = 5;
                 p12.GuestsAllowed = 8;
+                p12.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -354,6 +373,7 @@ namespace test21project.Seeding
                 p13.ZipCode = "85034";
                 p13.State = States.SD;
                 p13.Street = "76104 Marsh Crescent";
+                p13.UnitNumber = "";
                 p13.City = "Dennishaven";
                 p13.HostEmail = "chung@yahoo.com";
                 p13.WeekendPrice = 126.99m;
@@ -364,6 +384,7 @@ namespace test21project.Seeding
                 p13.Bedrooms = 7;
                 p13.Bathrooms = 7;
                 p13.GuestsAllowed = 4;
+                p13.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -381,6 +402,7 @@ namespace test21project.Seeding
                 p14.ZipCode = "60619";
                 p14.State = States.SD;
                 p14.Street = "0003 Grant Lakes";
+                p14.UnitNumber = "";
                 p14.City = "Port Karafort";
                 p14.HostEmail = "jacobs@yahoo.com";
                 p14.WeekendPrice = 188.81m;
@@ -391,6 +413,7 @@ namespace test21project.Seeding
                 p14.Bedrooms = 3;
                 p14.Bathrooms = 5;
                 p14.GuestsAllowed = 14;
+                p14.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -419,6 +442,7 @@ namespace test21project.Seeding
                 p15.Bedrooms = 1;
                 p15.Bathrooms = 3;
                 p15.GuestsAllowed = 11;
+                p15.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -447,6 +471,7 @@ namespace test21project.Seeding
                 p16.Bedrooms = 6;
                 p16.Bathrooms = 6;
                 p16.GuestsAllowed = 10;
+                p16.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -475,6 +500,7 @@ namespace test21project.Seeding
                 p17.Bedrooms = 1;
                 p17.Bathrooms = 3;
                 p17.GuestsAllowed = 1;
+                p17.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -492,6 +518,7 @@ namespace test21project.Seeding
                 p18.ZipCode = "28976";
                 p18.State = States.TX;
                 p18.Street = "30601 Hawkins Highway";
+                p18.UnitNumber = "";
                 p18.City = "Morashire";
                 p18.HostEmail = "martinez@aol.com";
                 p18.WeekendPrice = 160.61m;
@@ -502,6 +529,7 @@ namespace test21project.Seeding
                 p18.Bedrooms = 6;
                 p18.Bathrooms = 5;
                 p18.GuestsAllowed = 9;
+                p18.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -530,6 +558,7 @@ namespace test21project.Seeding
                 p19.Bedrooms = 1;
                 p19.Bathrooms = 3;
                 p19.GuestsAllowed = 5;
+                p19.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -547,6 +576,7 @@ namespace test21project.Seeding
                 p20.ZipCode = "68819";
                 p20.State = States.NE;
                 p20.Street = "76582 Vanessa Oval";
+                p20.UnitNumber = "";
                 p20.City = "New Richard";
                 p20.HostEmail = "chung@yahoo.com";
                 p20.WeekendPrice = 242.89m;
@@ -557,6 +587,7 @@ namespace test21project.Seeding
                 p20.Bedrooms = 5;
                 p20.Bathrooms = 4;
                 p20.GuestsAllowed = 12;
+                p20.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -585,6 +616,7 @@ namespace test21project.Seeding
                 p21.Bedrooms = 7;
                 p21.Bathrooms = 7;
                 p21.GuestsAllowed = 12;
+                p21.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -613,10 +645,11 @@ namespace test21project.Seeding
                 p22.Bedrooms = 3;
                 p22.Bathrooms = 4;
                 p22.GuestsAllowed = 2;
+                p22.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
-                p22.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room Room");
+                p22.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p22);
 
 
@@ -630,6 +663,7 @@ namespace test21project.Seeding
                 p23.ZipCode = "51431";
                 p23.State = States.NJ;
                 p23.Street = "891 Bullock Ford";
+                p23.UnitNumber = "";
                 p23.City = "Amandachester";
                 p23.HostEmail = "gonzalez@aol.com";
                 p23.WeekendPrice = 244.93m;
@@ -640,6 +674,7 @@ namespace test21project.Seeding
                 p23.Bedrooms = 5;
                 p23.Bathrooms = 6;
                 p23.GuestsAllowed = 11;
+                p23.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -657,6 +692,7 @@ namespace test21project.Seeding
                 p24.ZipCode = "50853";
                 p24.State = States.MT;
                 p24.Street = "02489 Cook Park";
+                p24.UnitNumber = "";
                 p24.City = "Sherriport";
                 p24.HostEmail = "chung@yahoo.com";
                 p24.WeekendPrice = 227.35m;
@@ -667,6 +703,7 @@ namespace test21project.Seeding
                 p24.Bedrooms = 4;
                 p24.Bathrooms = 3;
                 p24.GuestsAllowed = 6;
+                p24.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -684,6 +721,7 @@ namespace test21project.Seeding
                 p25.ZipCode = "20341";
                 p25.State = States.UT;
                 p25.Street = "23450 Timothy Divide";
+                p25.UnitNumber = "";
                 p25.City = "Wuland";
                 p25.HostEmail = "jacobs@yahoo.com";
                 p25.WeekendPrice = 278.36m;
@@ -694,6 +732,7 @@ namespace test21project.Seeding
                 p25.Bedrooms = 3;
                 p25.Bathrooms = 4;
                 p25.GuestsAllowed = 11;
+                p25.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -722,6 +761,7 @@ namespace test21project.Seeding
                 p26.Bedrooms = 6;
                 p26.Bathrooms = 7;
                 p26.GuestsAllowed = 7;
+                p26.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -750,10 +790,11 @@ namespace test21project.Seeding
                 p27.Bedrooms = 2;
                 p27.Bathrooms = 2;
                 p27.GuestsAllowed = 4;
+                p27.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
-                p27.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p27.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p27);
 
 
@@ -767,6 +808,7 @@ namespace test21project.Seeding
                 p28.ZipCode = "66353";
                 p28.State = States.SC;
                 p28.Street = "5100 Scott Burg";
+                p28.UnitNumber = "";
                 p28.City = "East Clayton";
                 p28.HostEmail = "morales@aol.com";
                 p28.WeekendPrice = 224.07m;
@@ -777,6 +819,7 @@ namespace test21project.Seeding
                 p28.Bedrooms = 4;
                 p28.Bathrooms = 3;
                 p28.GuestsAllowed = 3;
+                p28.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -805,6 +848,7 @@ namespace test21project.Seeding
                 p29.Bedrooms = 5;
                 p29.Bathrooms = 7;
                 p29.GuestsAllowed = 9;
+                p29.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -822,6 +866,7 @@ namespace test21project.Seeding
                 p30.ZipCode = "48447";
                 p30.State = States.IN;
                 p30.Street = "5415 David Square";
+                p30.UnitNumber = "";
                 p30.City = "West Michaeltown";
                 p30.HostEmail = "gonzalez@aol.com";
                 p30.WeekendPrice = 100.02m;
@@ -832,6 +877,7 @@ namespace test21project.Seeding
                 p30.Bedrooms = 7;
                 p30.Bathrooms = 9;
                 p30.GuestsAllowed = 1;
+                p30.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -849,6 +895,7 @@ namespace test21project.Seeding
                 p31.ZipCode = "62982";
                 p31.State = States.DE;
                 p31.Street = "03104 Norris Rapids";
+                p31.UnitNumber = "";
                 p31.City = "Port Donald";
                 p31.HostEmail = "loter@yahoo.com";
                 p31.WeekendPrice = 161.6m;
@@ -859,6 +906,7 @@ namespace test21project.Seeding
                 p31.Bedrooms = 1;
                 p31.Bathrooms = 2;
                 p31.GuestsAllowed = 11;
+                p31.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -887,6 +935,7 @@ namespace test21project.Seeding
                 p32.Bedrooms = 7;
                 p32.Bathrooms = 6;
                 p32.GuestsAllowed = 4;
+                p32.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -915,6 +964,7 @@ namespace test21project.Seeding
                 p33.Bedrooms = 3;
                 p33.Bathrooms = 3;
                 p33.GuestsAllowed = 2;
+                p33.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -932,6 +982,7 @@ namespace test21project.Seeding
                 p34.ZipCode = "54060";
                 p34.State = States.MS;
                 p34.Street = "645 John Roads";
+                p34.UnitNumber = "";
                 p34.City = "Danahaven";
                 p34.HostEmail = "morales@aol.com";
                 p34.WeekendPrice = 229.98m;
@@ -942,6 +993,7 @@ namespace test21project.Seeding
                 p34.Bedrooms = 7;
                 p34.Bathrooms = 6;
                 p34.GuestsAllowed = 14;
+                p34.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -970,6 +1022,7 @@ namespace test21project.Seeding
                 p35.Bedrooms = 1;
                 p35.Bathrooms = 1;
                 p35.GuestsAllowed = 5;
+                p35.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -987,6 +1040,7 @@ namespace test21project.Seeding
                 p36.ZipCode = "59363";
                 p36.State = States.UT;
                 p36.Street = "5825 Welch Corners";
+                p36.UnitNumber = "";
                 p36.City = "Fischerport";
                 p36.HostEmail = "jacobs@yahoo.com";
                 p36.WeekendPrice = 113.86m;
@@ -997,6 +1051,7 @@ namespace test21project.Seeding
                 p36.Bedrooms = 3;
                 p36.Bathrooms = 4;
                 p36.GuestsAllowed = 10;
+                p36.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -1014,6 +1069,7 @@ namespace test21project.Seeding
                 p37.ZipCode = "71770";
                 p37.State = States.IN;
                 p37.Street = "41489 Roger Terrace";
+                p37.UnitNumber = "";
                 p37.City = "Davisfort";
                 p37.HostEmail = "jacobs@yahoo.com";
                 p37.WeekendPrice = 299.09m;
@@ -1024,6 +1080,7 @@ namespace test21project.Seeding
                 p37.Bedrooms = 6;
                 p37.Bathrooms = 8;
                 p37.GuestsAllowed = 6;
+                p37.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -1052,6 +1109,7 @@ namespace test21project.Seeding
                 p38.Bedrooms = 2;
                 p38.Bathrooms = 2;
                 p38.GuestsAllowed = 5;
+                p38.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -1080,6 +1138,7 @@ namespace test21project.Seeding
                 p39.Bedrooms = 3;
                 p39.Bathrooms = 2;
                 p39.GuestsAllowed = 1;
+                p39.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -1108,6 +1167,7 @@ namespace test21project.Seeding
                 p40.Bedrooms = 3;
                 p40.Bathrooms = 5;
                 p40.GuestsAllowed = 9;
+                p40.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -1122,6 +1182,7 @@ namespace test21project.Seeding
 
                 Property p41 = new Property();
 
+               // p41.PropertyID = 3041;
                 p41.ZipCode = "28775";
                 p41.State = States.RI;
                 p41.Street = "637 Neal Island";
@@ -1136,6 +1197,7 @@ namespace test21project.Seeding
                 p41.Bedrooms = 3;
                 p41.Bathrooms = 3;
                 p41.GuestsAllowed = 14;
+                p41.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -1150,6 +1212,7 @@ namespace test21project.Seeding
 
                 Property p42 = new Property();
 
+             //   p42.PropertyID = 3042;
                 p42.ZipCode = "75585";
                 p42.State = States.WV;
                 p42.Street = "0811 Smith Canyon";
@@ -1164,6 +1227,7 @@ namespace test21project.Seeding
                 p42.Bedrooms = 3;
                 p42.Bathrooms = 5;
                 p42.GuestsAllowed = 2;
+                p42.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -1178,10 +1242,12 @@ namespace test21project.Seeding
 
                 Property p43 = new Property();
 
+               // p43.PropertyID = 3043;
                 p43.ZipCode = "17438";
                 p43.State = States.MD;
                 p43.Street = "7562 Fisher Spur";
-                p43.City = "Hernandezberg";
+                p43.UnitNumber = "";
+                p43.City = "Herdezberg";
                 p43.HostEmail = "rice@yahoo.com";
                 p43.WeekendPrice = 283.77m;
                 p43.WeekdayPrice = 218.87m;
@@ -1191,6 +1257,7 @@ namespace test21project.Seeding
                 p43.Bedrooms = 1;
                 p43.Bathrooms = 2;
                 p43.GuestsAllowed = 2;
+                p43.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -1205,9 +1272,11 @@ namespace test21project.Seeding
 
                 Property p44 = new Property();
 
+              //  p44.PropertyID = 3044;
                 p44.ZipCode = "7027";
                 p44.State = States.VT;
                 p44.Street = "5667 Blair Underpass";
+                p44.UnitNumber = "";
                 p44.City = "South Shelby";
                 p44.HostEmail = "morales@aol.com";
                 p44.WeekendPrice = 239.76m;
@@ -1218,6 +1287,7 @@ namespace test21project.Seeding
                 p44.Bedrooms = 2;
                 p44.Bathrooms = 4;
                 p44.GuestsAllowed = 13;
+                p44.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -1232,6 +1302,7 @@ namespace test21project.Seeding
 
                 Property p45 = new Property();
 
+              //  p45.PropertyID = 3045;
                 p45.ZipCode = "1008";
                 p45.State = States.MI;
                 p45.Street = "6708 Carpenter Overpass";
@@ -1246,10 +1317,11 @@ namespace test21project.Seeding
                 p45.Bedrooms = 7;
                 p45.Bathrooms = 7;
                 p45.GuestsAllowed = 7;
+                p45.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
-                p45.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p45.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p45);
 
 
@@ -1260,9 +1332,11 @@ namespace test21project.Seeding
 
                 Property p46 = new Property();
 
+             //   p46.PropertyID = 3046;
                 p46.ZipCode = "60236";
                 p46.State = States.ND;
                 p46.Street = "16396 Shawn Junction";
+                p46.UnitNumber = "";
                 p46.City = "New Nicolemouth";
                 p46.HostEmail = "rice@yahoo.com";
                 p46.WeekendPrice = 220.69m;
@@ -1273,6 +1347,7 @@ namespace test21project.Seeding
                 p46.Bedrooms = 4;
                 p46.Bathrooms = 4;
                 p46.GuestsAllowed = 6;
+                p46.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -1287,9 +1362,11 @@ namespace test21project.Seeding
 
                 Property p47 = new Property();
 
+             //   p47.PropertyID = 3047;
                 p47.ZipCode = "1707";
                 p47.State = States.CA;
                 p47.Street = "4486 Olson Well";
+                p47.UnitNumber = "";
                 p47.City = "North Kevin";
                 p47.HostEmail = "martinez@aol.com";
                 p47.WeekendPrice = 138.96m;
@@ -1300,6 +1377,7 @@ namespace test21project.Seeding
                 p47.Bedrooms = 7;
                 p47.Bathrooms = 7;
                 p47.GuestsAllowed = 10;
+                p47.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -1314,6 +1392,7 @@ namespace test21project.Seeding
 
                 Property p48 = new Property();
 
+            //    p48.PropertyID = 3048;
                 p48.ZipCode = "33233";
                 p48.State = States.HI;
                 p48.Street = "67771 Christopher Courts";
@@ -1328,6 +1407,7 @@ namespace test21project.Seeding
                 p48.Bedrooms = 5;
                 p48.Bathrooms = 5;
                 p48.GuestsAllowed = 2;
+                p48.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -1342,9 +1422,11 @@ namespace test21project.Seeding
 
                 Property p49 = new Property();
 
+             //   p49.PropertyID = 3049;
                 p49.ZipCode = "79756";
                 p49.State = States.NY;
                 p49.Street = "5561 Bishop Turnpike";
+                p49.UnitNumber = "";
                 p49.City = "Lake Kenneth";
                 p49.HostEmail = "gonzalez@aol.com";
                 p49.WeekendPrice = 259.87m;
@@ -1355,6 +1437,7 @@ namespace test21project.Seeding
                 p49.Bedrooms = 5;
                 p49.Bathrooms = 7;
                 p49.GuestsAllowed = 11;
+                p49.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -1369,6 +1452,7 @@ namespace test21project.Seeding
 
                 Property p50 = new Property();
 
+            //    p50.PropertyID = 3050;
                 p50.ZipCode = "36216";
                 p50.State = States.SD;
                 p50.Street = "3019 Gerald Mall";
@@ -1383,6 +1467,7 @@ namespace test21project.Seeding
                 p50.Bedrooms = 5;
                 p50.Bathrooms = 5;
                 p50.GuestsAllowed = 1;
+                p50.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -1397,6 +1482,7 @@ namespace test21project.Seeding
 
                 Property p51 = new Property();
 
+            //    p51.PropertyID = 3051;
                 p51.ZipCode = "43477";
                 p51.State = States.NY;
                 p51.Street = "84331 Leonard Fort";
@@ -1411,6 +1497,7 @@ namespace test21project.Seeding
                 p51.Bedrooms = 7;
                 p51.Bathrooms = 8;
                 p51.GuestsAllowed = 10;
+                p51.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -1425,9 +1512,11 @@ namespace test21project.Seeding
 
                 Property p52 = new Property();
 
+           //     p52.PropertyID = 3052;
                 p52.ZipCode = "17819";
                 p52.State = States.VA;
                 p52.Street = "62281 Kathy Tunnel";
+                p52.UnitNumber = "";
                 p52.City = "Hudsonborough";
                 p52.HostEmail = "ingram@gmail.com";
                 p52.WeekendPrice = 224.19m;
@@ -1438,6 +1527,7 @@ namespace test21project.Seeding
                 p52.Bedrooms = 1;
                 p52.Bathrooms = 1;
                 p52.GuestsAllowed = 9;
+                p52.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -1452,6 +1542,7 @@ namespace test21project.Seeding
 
                 Property p53 = new Property();
 
+           //     p53.PropertyID = 3053;
                 p53.ZipCode = "97149";
                 p53.State = States.NM;
                 p53.Street = "9927 Christina Burg";
@@ -1466,6 +1557,7 @@ namespace test21project.Seeding
                 p53.Bedrooms = 7;
                 p53.Bathrooms = 9;
                 p53.GuestsAllowed = 6;
+                p53.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -1480,6 +1572,7 @@ namespace test21project.Seeding
 
                 Property p54 = new Property();
 
+           //     p54.PropertyID = 3054;
                 p54.ZipCode = "45480";
                 p54.State = States.IA;
                 p54.Street = "142 Warner View";
@@ -1494,10 +1587,11 @@ namespace test21project.Seeding
                 p54.Bedrooms = 5;
                 p54.Bathrooms = 7;
                 p54.GuestsAllowed = 9;
+                p54.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
-                p54.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p54.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p54);
 
 
@@ -1508,9 +1602,11 @@ namespace test21project.Seeding
 
                 Property p55 = new Property();
 
+           //     p55.PropertyID = 3055;
                 p55.ZipCode = "3720";
                 p55.State = States.AR;
                 p55.Street = "5240 Berry Centers";
+                p55.UnitNumber = "";
                 p55.City = "West Andrew";
                 p55.HostEmail = "rankin@yahoo.com";
                 p55.WeekendPrice = 111.01m;
@@ -1521,6 +1617,7 @@ namespace test21project.Seeding
                 p55.Bedrooms = 7;
                 p55.Bathrooms = 6;
                 p55.GuestsAllowed = 12;
+                p55.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -1535,9 +1632,11 @@ namespace test21project.Seeding
 
                 Property p56 = new Property();
 
+          //      p56.PropertyID = 3056;
                 p56.ZipCode = "85576";
                 p56.State = States.HI;
                 p56.Street = "51056 Patricia Forge";
+                p56.UnitNumber = "";
                 p56.City = "Grahamstad";
                 p56.HostEmail = "loter@yahoo.com";
                 p56.WeekendPrice = 167.53m;
@@ -1548,6 +1647,7 @@ namespace test21project.Seeding
                 p56.Bedrooms = 7;
                 p56.Bathrooms = 9;
                 p56.GuestsAllowed = 10;
+                p56.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -1562,6 +1662,7 @@ namespace test21project.Seeding
 
                 Property p57 = new Property();
 
+          //      p57.PropertyID = 3057;
                 p57.ZipCode = "92199";
                 p57.State = States.VA;
                 p57.Street = "0648 Malone Port";
@@ -1576,6 +1677,7 @@ namespace test21project.Seeding
                 p57.Bedrooms = 6;
                 p57.Bathrooms = 5;
                 p57.GuestsAllowed = 12;
+                p57.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -1590,6 +1692,7 @@ namespace test21project.Seeding
 
                 Property p58 = new Property();
 
+           //     p58.PropertyID = 3058;
                 p58.ZipCode = "5261";
                 p58.State = States.SC;
                 p58.Street = "23028 Jennifer Meadow";
@@ -1604,6 +1707,7 @@ namespace test21project.Seeding
                 p58.Bedrooms = 1;
                 p58.Bathrooms = 2;
                 p58.GuestsAllowed = 14;
+                p58.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -1618,6 +1722,7 @@ namespace test21project.Seeding
 
                 Property p59 = new Property();
 
+//p59.PropertyID = 3059;
                 p59.ZipCode = "72649";
                 p59.State = States.LA;
                 p59.Street = "2738 Martin Terrace";
@@ -1632,6 +1737,7 @@ namespace test21project.Seeding
                 p59.Bedrooms = 1;
                 p59.Bathrooms = 1;
                 p59.GuestsAllowed = 11;
+                p59.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -1646,9 +1752,11 @@ namespace test21project.Seeding
 
                 Property p60 = new Property();
 
+                //   p60.PropertyID = 3060;
                 p60.ZipCode = "97488";
                 p60.State = States.KY;
                 p60.Street = "984 Stephen Stravenue";
+                p60.UnitNumber = "";
                 p60.City = "South Michaelton";
                 p60.HostEmail = "ingram@gmail.com";
                 p60.WeekendPrice = 178.29m;
@@ -1659,6 +1767,7 @@ namespace test21project.Seeding
                 p60.Bedrooms = 4;
                 p60.Bathrooms = 6;
                 p60.GuestsAllowed = 3;
+                p60.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -1673,6 +1782,7 @@ namespace test21project.Seeding
 
                 Property p61 = new Property();
 
+                //     p61.PropertyID = 3061;
                 p61.ZipCode = "42837";
                 p61.State = States.LA;
                 p61.Street = "98522 Mathis Viaduct";
@@ -1687,6 +1797,7 @@ namespace test21project.Seeding
                 p61.Bedrooms = 4;
                 p61.Bathrooms = 4;
                 p61.GuestsAllowed = 1;
+                p61.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -1701,6 +1812,7 @@ namespace test21project.Seeding
 
                 Property p62 = new Property();
 
+                //     p62.PropertyID = 3062;
                 p62.ZipCode = "56059";
                 p62.State = States.OH;
                 p62.Street = "620 Ashley Mills";
@@ -1715,6 +1827,7 @@ namespace test21project.Seeding
                 p62.Bedrooms = 1;
                 p62.Bathrooms = 3;
                 p62.GuestsAllowed = 9;
+                p62.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -1729,9 +1842,11 @@ namespace test21project.Seeding
 
                 Property p63 = new Property();
 
+                //    p63.PropertyID = 3063;
                 p63.ZipCode = "2288";
                 p63.State = States.LA;
                 p63.Street = "212 Shelly Roads";
+                p63.UnitNumber = "";
                 p63.City = "Fischerview";
                 p63.HostEmail = "chung@yahoo.com";
                 p63.WeekendPrice = 163.88m;
@@ -1742,6 +1857,7 @@ namespace test21project.Seeding
                 p63.Bedrooms = 5;
                 p63.Bathrooms = 7;
                 p63.GuestsAllowed = 10;
+                p63.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -1756,6 +1872,7 @@ namespace test21project.Seeding
 
                 Property p64 = new Property();
 
+                //    p64.PropertyID = 3064;
                 p64.ZipCode = "50851";
                 p64.State = States.OK;
                 p64.Street = "8885 Lee Tunnel";
@@ -1770,10 +1887,11 @@ namespace test21project.Seeding
                 p64.Bedrooms = 7;
                 p64.Bathrooms = 7;
                 p64.GuestsAllowed = 7;
+                p64.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
-                p64.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p64.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p64);
 
 
@@ -1784,9 +1902,11 @@ namespace test21project.Seeding
 
                 Property p65 = new Property();
 
+                //        p65.PropertyID = 3065;
                 p65.ZipCode = "3009";
                 p65.State = States.NM;
                 p65.Street = "693 Michael Estate";
+                p65.UnitNumber = "";
                 p65.City = "Lake Michael";
                 p65.HostEmail = "tanner@utexas.edu";
                 p65.WeekendPrice = 139.83m;
@@ -1797,6 +1917,7 @@ namespace test21project.Seeding
                 p65.Bedrooms = 4;
                 p65.Bathrooms = 5;
                 p65.GuestsAllowed = 13;
+                p65.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -1811,9 +1932,11 @@ namespace test21project.Seeding
 
                 Property p66 = new Property();
 
+                //     p66.PropertyID = 3066;
                 p66.ZipCode = "92905";
                 p66.State = States.NY;
                 p66.Street = "342 Miller Mission";
+                p66.UnitNumber = "";
                 p66.City = "Lake Jennifer";
                 p66.HostEmail = "martinez@aol.com";
                 p66.WeekendPrice = 249.24m;
@@ -1824,6 +1947,7 @@ namespace test21project.Seeding
                 p66.Bedrooms = 4;
                 p66.Bathrooms = 5;
                 p66.GuestsAllowed = 1;
+                p66.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -1838,9 +1962,11 @@ namespace test21project.Seeding
 
                 Property p67 = new Property();
 
+                //  p67.PropertyID = 3067;
                 p67.ZipCode = "65056";
                 p67.State = States.AK;
                 p67.Street = "71664 Kim Throughway";
+                p67.UnitNumber = "";
                 p67.City = "Chelsealand";
                 p67.HostEmail = "rankin@yahoo.com";
                 p67.WeekendPrice = 286.53m;
@@ -1851,6 +1977,7 @@ namespace test21project.Seeding
                 p67.Bedrooms = 6;
                 p67.Bathrooms = 8;
                 p67.GuestsAllowed = 9;
+                p67.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -1865,6 +1992,7 @@ namespace test21project.Seeding
 
                 Property p68 = new Property();
 
+                //     p68.PropertyID = 3068;
                 p68.ZipCode = "11181";
                 p68.State = States.AZ;
                 p68.Street = "66660 Gomez Port";
@@ -1879,6 +2007,7 @@ namespace test21project.Seeding
                 p68.Bedrooms = 4;
                 p68.Bathrooms = 3;
                 p68.GuestsAllowed = 2;
+                p68.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -1893,6 +2022,7 @@ namespace test21project.Seeding
 
                 Property p69 = new Property();
 
+                //      p69.PropertyID = 3069;
                 p69.ZipCode = "53480";
                 p69.State = States.FL;
                 p69.Street = "0131 Williams Ville";
@@ -1907,6 +2037,7 @@ namespace test21project.Seeding
                 p69.Bedrooms = 6;
                 p69.Bathrooms = 5;
                 p69.GuestsAllowed = 13;
+                p69.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -1921,9 +2052,11 @@ namespace test21project.Seeding
 
                 Property p70 = new Property();
 
+                //      p70.PropertyID = 3070;
                 p70.ZipCode = "11353";
                 p70.State = States.OR;
                 p70.Street = "22708 Madison Spurs";
+                p70.UnitNumber = "";
                 p70.City = "Herringstad";
                 p70.HostEmail = "morales@aol.com";
                 p70.WeekendPrice = 241.25m;
@@ -1934,6 +2067,7 @@ namespace test21project.Seeding
                 p70.Bedrooms = 6;
                 p70.Bathrooms = 7;
                 p70.GuestsAllowed = 2;
+                p70.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -1948,9 +2082,11 @@ namespace test21project.Seeding
 
                 Property p71 = new Property();
 
+                //      p71.PropertyID = 3071;
                 p71.ZipCode = "5560";
                 p71.State = States.FL;
                 p71.Street = "3454 Holmes Motorway";
+                p71.UnitNumber = "";
                 p71.City = "Port Rachel";
                 p71.HostEmail = "chung@yahoo.com";
                 p71.WeekendPrice = 123.04m;
@@ -1961,6 +2097,7 @@ namespace test21project.Seeding
                 p71.Bedrooms = 3;
                 p71.Bathrooms = 3;
                 p71.GuestsAllowed = 1;
+                p71.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -1975,9 +2112,11 @@ namespace test21project.Seeding
 
                 Property p72 = new Property();
 
+                //    p72.PropertyID = 3072;
                 p72.ZipCode = "93500";
                 p72.State = States.GA;
                 p72.Street = "805 James Turnpike";
+                p72.UnitNumber = "";
                 p72.City = "Carrmouth";
                 p72.HostEmail = "martinez@aol.com";
                 p72.WeekendPrice = 219.86m;
@@ -1988,6 +2127,7 @@ namespace test21project.Seeding
                 p72.Bedrooms = 6;
                 p72.Bathrooms = 5;
                 p72.GuestsAllowed = 12;
+                p72.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -2002,9 +2142,11 @@ namespace test21project.Seeding
 
                 Property p73 = new Property();
 
+                //      p73.PropertyID = 3073;
                 p73.ZipCode = "44515";
                 p73.State = States.NV;
                 p73.Street = "8081 Smith Trail";
+                p73.UnitNumber = "";
                 p73.City = "North Ronaldstad";
                 p73.HostEmail = "jacobs@yahoo.com";
                 p73.WeekendPrice = 196.09m;
@@ -2015,6 +2157,7 @@ namespace test21project.Seeding
                 p73.Bedrooms = 7;
                 p73.Bathrooms = 7;
                 p73.GuestsAllowed = 3;
+                p73.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -2029,6 +2172,7 @@ namespace test21project.Seeding
 
                 Property p74 = new Property();
 
+                //      p74.PropertyID = 3074;
                 p74.ZipCode = "7347";
                 p74.State = States.MS;
                 p74.Street = "125 Ian Crossroad";
@@ -2043,6 +2187,7 @@ namespace test21project.Seeding
                 p74.Bedrooms = 2;
                 p74.Bathrooms = 1;
                 p74.GuestsAllowed = 4;
+                p74.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -2057,9 +2202,11 @@ namespace test21project.Seeding
 
                 Property p75 = new Property();
 
+                //    p75.PropertyID = 3075;
                 p75.ZipCode = "54532";
                 p75.State = States.NH;
                 p75.Street = "1607 Munoz River";
+                p75.UnitNumber = "";
                 p75.City = "Emilyshire";
                 p75.HostEmail = "chung@yahoo.com";
                 p75.WeekendPrice = 209.77m;
@@ -2070,6 +2217,7 @@ namespace test21project.Seeding
                 p75.Bedrooms = 6;
                 p75.Bathrooms = 7;
                 p75.GuestsAllowed = 3;
+                p75.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -2084,6 +2232,7 @@ namespace test21project.Seeding
 
                 Property p76 = new Property();
 
+                //       p76.PropertyID = 3076;
                 p76.ZipCode = "65516";
                 p76.State = States.UT;
                 p76.Street = "3615 David Keys";
@@ -2098,6 +2247,7 @@ namespace test21project.Seeding
                 p76.Bedrooms = 2;
                 p76.Bathrooms = 4;
                 p76.GuestsAllowed = 3;
+                p76.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -2112,9 +2262,11 @@ namespace test21project.Seeding
 
                 Property p77 = new Property();
 
+                //                p77.PropertyID = 3077;
                 p77.ZipCode = "20721";
                 p77.State = States.AZ;
                 p77.Street = "640 Mary Common";
+                p77.UnitNumber = "";
                 p77.City = "Michaelville";
                 p77.HostEmail = "ingram@gmail.com";
                 p77.WeekendPrice = 173.01m;
@@ -2125,6 +2277,7 @@ namespace test21project.Seeding
                 p77.Bedrooms = 3;
                 p77.Bathrooms = 4;
                 p77.GuestsAllowed = 7;
+                p77.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -2139,9 +2292,11 @@ namespace test21project.Seeding
 
                 Property p78 = new Property();
 
+                //      p78.PropertyID = 3078;
                 p78.ZipCode = "43567";
                 p78.State = States.LA;
                 p78.Street = "395 Timothy Road";
+                p78.UnitNumber = "";
                 p78.City = "Williamsbury";
                 p78.HostEmail = "loter@yahoo.com";
                 p78.WeekendPrice = 198.1m;
@@ -2152,6 +2307,7 @@ namespace test21project.Seeding
                 p78.Bedrooms = 5;
                 p78.Bathrooms = 7;
                 p78.GuestsAllowed = 5;
+                p78.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -2166,9 +2322,11 @@ namespace test21project.Seeding
 
                 Property p79 = new Property();
 
+                //     p79.PropertyID = 3079;
                 p79.ZipCode = "1239";
                 p79.State = States.OR;
                 p79.Street = "3267 Walter Dam";
+                p79.UnitNumber = "";
                 p79.City = "Cunninghamtown";
                 p79.HostEmail = "chung@yahoo.com";
                 p79.WeekendPrice = 127.7m;
@@ -2179,6 +2337,7 @@ namespace test21project.Seeding
                 p79.Bedrooms = 1;
                 p79.Bathrooms = 2;
                 p79.GuestsAllowed = 7;
+                p79.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -2193,9 +2352,11 @@ namespace test21project.Seeding
 
                 Property p80 = new Property();
 
+                //  p80.PropertyID = 3080;
                 p80.ZipCode = "3966";
                 p80.State = States.MS;
                 p80.Street = "00580 Brandon Creek";
+                p80.UnitNumber = "";
                 p80.City = "Port Eric";
                 p80.HostEmail = "jacobs@yahoo.com";
                 p80.WeekendPrice = 236.71m;
@@ -2206,6 +2367,7 @@ namespace test21project.Seeding
                 p80.Bedrooms = 3;
                 p80.Bathrooms = 5;
                 p80.GuestsAllowed = 2;
+                p80.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -2220,6 +2382,7 @@ namespace test21project.Seeding
 
                 Property p81 = new Property();
 
+                //   p81.PropertyID = 3081;
                 p81.ZipCode = "29996";
                 p81.State = States.MS;
                 p81.Street = "325 Amanda Cliffs";
@@ -2234,6 +2397,7 @@ namespace test21project.Seeding
                 p81.Bedrooms = 6;
                 p81.Bathrooms = 6;
                 p81.GuestsAllowed = 13;
+                p81.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -2248,6 +2412,7 @@ namespace test21project.Seeding
 
                 Property p82 = new Property();
 
+                //    p82.PropertyID = 3082;
                 p82.ZipCode = "93980";
                 p82.State = States.CT;
                 p82.Street = "40956 Amanda Walk";
@@ -2262,6 +2427,7 @@ namespace test21project.Seeding
                 p82.Bedrooms = 4;
                 p82.Bathrooms = 4;
                 p82.GuestsAllowed = 5;
+                p82.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -2276,6 +2442,7 @@ namespace test21project.Seeding
 
                 Property p83 = new Property();
 
+                //  p83.PropertyID = 3083;
                 p83.ZipCode = "23687";
                 p83.State = States.KS;
                 p83.Street = "25762 Gill Creek";
@@ -2290,6 +2457,7 @@ namespace test21project.Seeding
                 p83.Bedrooms = 1;
                 p83.Bathrooms = 3;
                 p83.GuestsAllowed = 5;
+                p83.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -2304,6 +2472,7 @@ namespace test21project.Seeding
 
                 Property p84 = new Property();
 
+                //   p84.PropertyID = 3084;
                 p84.ZipCode = "4593";
                 p84.State = States.GA;
                 p84.Street = "6048 Johnson Loop";
@@ -2318,6 +2487,7 @@ namespace test21project.Seeding
                 p84.Bedrooms = 1;
                 p84.Bathrooms = 3;
                 p84.GuestsAllowed = 8;
+                p84.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -2332,6 +2502,7 @@ namespace test21project.Seeding
 
                 Property p85 = new Property();
 
+                //     p85.PropertyID = 3085;
                 p85.ZipCode = "96954";
                 p85.State = States.RI;
                 p85.Street = "1168 Gary Fords";
@@ -2346,6 +2517,7 @@ namespace test21project.Seeding
                 p85.Bedrooms = 1;
                 p85.Bathrooms = 2;
                 p85.GuestsAllowed = 11;
+                p85.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -2360,6 +2532,7 @@ namespace test21project.Seeding
 
                 Property p86 = new Property();
 
+                //    p86.PropertyID = 3086;
                 p86.ZipCode = "62271";
                 p86.State = States.MS;
                 p86.Street = "164 Matthew Parkway";
@@ -2374,6 +2547,7 @@ namespace test21project.Seeding
                 p86.Bedrooms = 6;
                 p86.Bathrooms = 8;
                 p86.GuestsAllowed = 8;
+                p86.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -2388,6 +2562,7 @@ namespace test21project.Seeding
 
                 Property p87 = new Property();
 
+                //   p87.PropertyID = 3087;
                 p87.ZipCode = "5222";
                 p87.State = States.CO;
                 p87.Street = "1220 Heidi Rue ";
@@ -2402,6 +2577,7 @@ namespace test21project.Seeding
                 p87.Bedrooms = 5;
                 p87.Bathrooms = 4;
                 p87.GuestsAllowed = 1;
+                p87.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -2416,6 +2592,7 @@ namespace test21project.Seeding
 
                 Property p88 = new Property();
 
+                //   p88.PropertyID = 3088;
                 p88.ZipCode = "22365";
                 p88.State = States.SD;
                 p88.Street = "751 Wood Square ";
@@ -2430,10 +2607,11 @@ namespace test21project.Seeding
                 p88.Bedrooms = 7;
                 p88.Bathrooms = 7;
                 p88.GuestsAllowed = 13;
+                p88.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
-                p88.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p88.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p88);
 
 
@@ -2444,6 +2622,7 @@ namespace test21project.Seeding
 
                 Property p89 = new Property();
 
+                //  p89.PropertyID = 3089;
                 p89.ZipCode = "53609";
                 p89.State = States.OR;
                 p89.Street = "376 Smith Dale ";
@@ -2458,10 +2637,11 @@ namespace test21project.Seeding
                 p89.Bedrooms = 2;
                 p89.Bathrooms = 2;
                 p89.GuestsAllowed = 9;
+                p89.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
-                p89.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p89.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p89);
 
 
@@ -2472,6 +2652,7 @@ namespace test21project.Seeding
 
                 Property p90 = new Property();
 
+                //     p90.PropertyID = 3090;
                 p90.ZipCode = "9478";
                 p90.State = States.CA;
                 p90.Street = "79148 Pierce Lock ";
@@ -2486,10 +2667,11 @@ namespace test21project.Seeding
                 p90.Bedrooms = 3;
                 p90.Bathrooms = 5;
                 p90.GuestsAllowed = 6;
+                p90.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
-                p90.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p90.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p90);
 
 
@@ -2500,6 +2682,7 @@ namespace test21project.Seeding
 
                 Property p91 = new Property();
 
+                //     p91.PropertyID = 3091;
                 p91.ZipCode = "1425";
                 p91.State = States.ID;
                 p91.Street = "147 Lisa Hill ";
@@ -2514,6 +2697,7 @@ namespace test21project.Seeding
                 p91.Bedrooms = 4;
                 p91.Bathrooms = 6;
                 p91.GuestsAllowed = 10;
+                p91.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -2528,6 +2712,7 @@ namespace test21project.Seeding
 
                 Property p92 = new Property();
 
+                //     p92.PropertyID = 3092;
                 p92.ZipCode = "29941";
                 p92.State = States.KY;
                 p92.Street = "971 Hansen Well ";
@@ -2542,10 +2727,11 @@ namespace test21project.Seeding
                 p92.Bedrooms = 6;
                 p92.Bathrooms = 8;
                 p92.GuestsAllowed = 4;
+                p92.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
-                p92.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p92.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p92);
 
 
@@ -2556,6 +2742,7 @@ namespace test21project.Seeding
 
                 Property p93 = new Property();
 
+                //     p93.PropertyID = 3093;
                 p93.ZipCode = "47577";
                 p93.State = States.WY;
                 p93.Street = "511 Berry Fork";
@@ -2570,10 +2757,11 @@ namespace test21project.Seeding
                 p93.Bedrooms = 4;
                 p93.Bathrooms = 5;
                 p93.GuestsAllowed = 3;
+                p93.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
-                p93.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p93.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p93);
 
 
@@ -2584,9 +2772,11 @@ namespace test21project.Seeding
 
                 Property p94 = new Property();
 
+                //   p94.PropertyID = 3094;
                 p94.ZipCode = "94134";
                 p94.State = States.WI;
                 p94.Street = "65873 Chen Knolls";
+                p94.UnitNumber = "";
                 p94.City = "Ramirezfurt";
                 p94.HostEmail = "morales@aol.com";
                 p94.WeekendPrice = 117.17m;
@@ -2597,6 +2787,7 @@ namespace test21project.Seeding
                 p94.Bedrooms = 4;
                 p94.Bathrooms = 3;
                 p94.GuestsAllowed = 14;
+                p94.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -2611,6 +2802,7 @@ namespace test21project.Seeding
 
                 Property p95 = new Property();
 
+                //    p95.PropertyID = 3095;
                 p95.ZipCode = "57039";
                 p95.State = States.IN;
                 p95.Street = "8799 Emma Parkway ";
@@ -2625,10 +2817,11 @@ namespace test21project.Seeding
                 p95.Bedrooms = 3;
                 p95.Bathrooms = 5;
                 p95.GuestsAllowed = 11;
+                p95.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
-                p95.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p95.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p95);
 
 
@@ -2639,6 +2832,7 @@ namespace test21project.Seeding
 
                 Property p96 = new Property();
 
+                //      p96.PropertyID = 3096;
                 p96.ZipCode = "23718";
                 p96.State = States.ND;
                 p96.Street = "30068 David View ";
@@ -2653,6 +2847,7 @@ namespace test21project.Seeding
                 p96.Bedrooms = 4;
                 p96.Bathrooms = 6;
                 p96.GuestsAllowed = 7;
+                p96.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -2667,6 +2862,7 @@ namespace test21project.Seeding
 
                 Property p97 = new Property();
 
+                //      p97.PropertyID = 3097;
                 p97.ZipCode = "26932";
                 p97.State = States.MD;
                 p97.Street = "298 Johnathan Cove ";
@@ -2681,6 +2877,7 @@ namespace test21project.Seeding
                 p97.Bedrooms = 6;
                 p97.Bathrooms = 7;
                 p97.GuestsAllowed = 13;
+                p97.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -2695,9 +2892,11 @@ namespace test21project.Seeding
 
                 Property p98 = new Property();
 
+                //     p98.PropertyID = 3098;
                 p98.ZipCode = "74554";
                 p98.State = States.CO;
                 p98.Street = "171 Harrison Motorway";
+                p98.UnitNumber = "";
                 p98.City = "Davidview";
                 p98.HostEmail = "chung@yahoo.com";
                 p98.WeekendPrice = 234.81m;
@@ -2708,6 +2907,7 @@ namespace test21project.Seeding
                 p98.Bedrooms = 6;
                 p98.Bathrooms = 8;
                 p98.GuestsAllowed = 10;
+                p98.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -2722,9 +2922,11 @@ namespace test21project.Seeding
 
                 Property p99 = new Property();
 
+                //      p99.PropertyID = 3099;
                 p99.ZipCode = "32097";
                 p99.State = States.NE;
                 p99.Street = "3576 Sergio Avenue";
+                p99.UnitNumber = "";
                 p99.City = "Benjaminmouth";
                 p99.HostEmail = "morales@aol.com";
                 p99.WeekendPrice = 260.62m;
@@ -2735,6 +2937,7 @@ namespace test21project.Seeding
                 p99.Bedrooms = 1;
                 p99.Bathrooms = 1;
                 p99.GuestsAllowed = 1;
+                p99.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -2749,6 +2952,7 @@ namespace test21project.Seeding
 
                 Property p100 = new Property();
 
+                //      p100.PropertyID = 3100;
                 p100.ZipCode = "21519";
                 p100.State = States.RI;
                 p100.Street = "37457 Tanya Pike ";
@@ -2763,6 +2967,7 @@ namespace test21project.Seeding
                 p100.Bedrooms = 2;
                 p100.Bathrooms = 1;
                 p100.GuestsAllowed = 13;
+                p100.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -2777,6 +2982,7 @@ namespace test21project.Seeding
 
                 Property p101 = new Property();
 
+                //     p101.PropertyID = 3101;
                 p101.ZipCode = "76875";
                 p101.State = States.PA;
                 p101.Street = "3673 Peter Turnpike";
@@ -2791,10 +2997,11 @@ namespace test21project.Seeding
                 p101.Bedrooms = 4;
                 p101.Bathrooms = 4;
                 p101.GuestsAllowed = 6;
+                p101.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
-                p101.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p101.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p101);
 
 
@@ -2805,6 +3012,7 @@ namespace test21project.Seeding
 
                 Property p102 = new Property();
 
+                //   p102.PropertyID = 3102;
                 p102.ZipCode = "80451";
                 p102.State = States.TX;
                 p102.Street = "939 Johnson Oval";
@@ -2819,10 +3027,11 @@ namespace test21project.Seeding
                 p102.Bedrooms = 3;
                 p102.Bathrooms = 5;
                 p102.GuestsAllowed = 6;
+                p102.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
-                p102.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p102.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p102);
 
 
@@ -2833,9 +3042,11 @@ namespace test21project.Seeding
 
                 Property p103 = new Property();
 
+                //   p103.PropertyID = 3103;
                 p103.ZipCode = "51726";
                 p103.State = States.NV;
                 p103.Street = "645 Jennings Estates";
+                p103.UnitNumber = "";
                 p103.City = "Angelastad";
                 p103.HostEmail = "tanner@utexas.edu";
                 p103.WeekendPrice = 109.44m;
@@ -2846,6 +3057,7 @@ namespace test21project.Seeding
                 p103.Bedrooms = 2;
                 p103.Bathrooms = 3;
                 p103.GuestsAllowed = 4;
+                p103.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -2860,6 +3072,7 @@ namespace test21project.Seeding
 
                 Property p104 = new Property();
 
+                //   p104.PropertyID = 3104;
                 p104.ZipCode = "77240";
                 p104.State = States.MT;
                 p104.Street = "1231 Stephanie Lock";
@@ -2874,10 +3087,11 @@ namespace test21project.Seeding
                 p104.Bedrooms = 5;
                 p104.Bathrooms = 7;
                 p104.GuestsAllowed = 5;
+                p104.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
-                p104.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p104.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p104);
 
 
@@ -2888,6 +3102,7 @@ namespace test21project.Seeding
 
                 Property p105 = new Property();
 
+                // p105.PropertyID = 3105;
                 p105.ZipCode = "98152";
                 p105.State = States.CO;
                 p105.Street = "302 Parker Plains";
@@ -2902,6 +3117,7 @@ namespace test21project.Seeding
                 p105.Bedrooms = 3;
                 p105.Bathrooms = 2;
                 p105.GuestsAllowed = 1;
+                p105.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -2916,9 +3132,11 @@ namespace test21project.Seeding
 
                 Property p106 = new Property();
 
+                //      p106.PropertyID = 3106;
                 p106.ZipCode = "98277";
                 p106.State = States.MS;
-                p106.Street = "098 Hernandez Green";
+                p106.Street = "098 Herdez Green";
+                p106.UnitNumber = "";
                 p106.City = "New Sergiobury";
                 p106.HostEmail = "morales@aol.com";
                 p106.WeekendPrice = 262.3m;
@@ -2929,6 +3147,7 @@ namespace test21project.Seeding
                 p106.Bedrooms = 4;
                 p106.Bathrooms = 6;
                 p106.GuestsAllowed = 8;
+                p106.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -2943,6 +3162,7 @@ namespace test21project.Seeding
 
                 Property p107 = new Property();
 
+                //    p107.PropertyID = 3107;
                 p107.ZipCode = "80082";
                 p107.State = States.NE;
                 p107.Street = "94102 Sims Port";
@@ -2957,6 +3177,7 @@ namespace test21project.Seeding
                 p107.Bedrooms = 4;
                 p107.Bathrooms = 4;
                 p107.GuestsAllowed = 8;
+                p107.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -2971,9 +3192,11 @@ namespace test21project.Seeding
 
                 Property p108 = new Property();
 
+                //    p108.PropertyID = 3108;
                 p108.ZipCode = "71531";
                 p108.State = States.ND;
                 p108.Street = "01630 Baker Crescent";
+                p108.UnitNumber = "";
                 p108.City = "Kellyborough";
                 p108.HostEmail = "gonzalez@aol.com";
                 p108.WeekendPrice = 125.27m;
@@ -2984,6 +3207,7 @@ namespace test21project.Seeding
                 p108.Bedrooms = 1;
                 p108.Bathrooms = 1;
                 p108.GuestsAllowed = 4;
+                p108.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -2998,9 +3222,11 @@ namespace test21project.Seeding
 
                 Property p109 = new Property();
 
+                //     p109.PropertyID = 3109;
                 p109.ZipCode = "14157";
                 p109.State = States.OK;
                 p109.Street = "70452 Forbes Courts";
+                p109.UnitNumber = "";
                 p109.City = "Mosesland";
                 p109.HostEmail = "morales@aol.com";
                 p109.WeekendPrice = 172.1m;
@@ -3011,6 +3237,7 @@ namespace test21project.Seeding
                 p109.Bedrooms = 4;
                 p109.Bathrooms = 3;
                 p109.GuestsAllowed = 9;
+                p109.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -3025,9 +3252,11 @@ namespace test21project.Seeding
 
                 Property p110 = new Property();
 
+                //   p110.PropertyID = 3110;
                 p110.ZipCode = "26899";
                 p110.State = States.MO;
                 p110.Street = "0835 Angela Station";
+                p110.UnitNumber = "";
                 p110.City = "East Heather";
                 p110.HostEmail = "tanner@utexas.edu";
                 p110.WeekendPrice = 299.91m;
@@ -3038,6 +3267,7 @@ namespace test21project.Seeding
                 p110.Bedrooms = 5;
                 p110.Bathrooms = 7;
                 p110.GuestsAllowed = 9;
+                p110.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -3052,6 +3282,7 @@ namespace test21project.Seeding
 
                 Property p111 = new Property();
 
+                //    p111.PropertyID = 3111;
                 p111.ZipCode = "42872";
                 p111.State = States.VT;
                 p111.Street = "2458 Jason Village";
@@ -3066,6 +3297,7 @@ namespace test21project.Seeding
                 p111.Bedrooms = 2;
                 p111.Bathrooms = 4;
                 p111.GuestsAllowed = 4;
+                p111.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -3080,9 +3312,11 @@ namespace test21project.Seeding
 
                 Property p112 = new Property();
 
+                //      p112.PropertyID = 3112;
                 p112.ZipCode = "78301";
                 p112.State = States.CO;
                 p112.Street = "1243 Grimes Corners";
+                p112.UnitNumber = "";
                 p112.City = "Shawchester";
                 p112.HostEmail = "martinez@aol.com";
                 p112.WeekendPrice = 193.24m;
@@ -3093,6 +3327,7 @@ namespace test21project.Seeding
                 p112.Bedrooms = 4;
                 p112.Bathrooms = 3;
                 p112.GuestsAllowed = 2;
+                p112.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -3107,9 +3342,11 @@ namespace test21project.Seeding
 
                 Property p113 = new Property();
 
+                //    p113.PropertyID = 3113;
                 p113.ZipCode = "34523";
                 p113.State = States.DC;
                 p113.Street = "558 Williams Station";
+                p113.UnitNumber = "";
                 p113.City = "Port Pamela";
                 p113.HostEmail = "rankin@yahoo.com";
                 p113.WeekendPrice = 192.46m;
@@ -3120,6 +3357,7 @@ namespace test21project.Seeding
                 p113.Bedrooms = 6;
                 p113.Bathrooms = 7;
                 p113.GuestsAllowed = 4;
+                p113.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -3134,6 +3372,7 @@ namespace test21project.Seeding
 
                 Property p114 = new Property();
 
+                //     p114.PropertyID = 3114;
                 p114.ZipCode = "63064";
                 p114.State = States.VT;
                 p114.Street = "4934 Lozano Place";
@@ -3148,10 +3387,11 @@ namespace test21project.Seeding
                 p114.Bedrooms = 5;
                 p114.Bathrooms = 6;
                 p114.GuestsAllowed = 6;
+                p114.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
-                p114.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p114.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p114);
 
 
@@ -3162,9 +3402,11 @@ namespace test21project.Seeding
 
                 Property p115 = new Property();
 
+                //   p115.PropertyID = 3115;
                 p115.ZipCode = "35700";
                 p115.State = States.LA;
                 p115.Street = "41227 Patricia Lake";
+                p115.UnitNumber = "";
                 p115.City = "Martinezbury";
                 p115.HostEmail = "gonzalez@aol.com";
                 p115.WeekendPrice = 108.28m;
@@ -3175,6 +3417,7 @@ namespace test21project.Seeding
                 p115.Bedrooms = 2;
                 p115.Bathrooms = 1;
                 p115.GuestsAllowed = 3;
+                p115.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -3189,6 +3432,7 @@ namespace test21project.Seeding
 
                 Property p116 = new Property();
 
+                //     p116.PropertyID = 3116;
                 p116.ZipCode = "55206";
                 p116.State = States.VA;
                 p116.Street = "028 Harris Drive";
@@ -3203,6 +3447,7 @@ namespace test21project.Seeding
                 p116.Bedrooms = 2;
                 p116.Bathrooms = 2;
                 p116.GuestsAllowed = 14;
+                p116.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -3217,6 +3462,7 @@ namespace test21project.Seeding
 
                 Property p117 = new Property();
 
+                //    p117.PropertyID = 3117;
                 p117.ZipCode = "98240";
                 p117.State = States.IA;
                 p117.Street = "06268 Lewis Place";
@@ -3231,10 +3477,11 @@ namespace test21project.Seeding
                 p117.Bedrooms = 3;
                 p117.Bathrooms = 2;
                 p117.GuestsAllowed = 4;
+                p117.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
-                p117.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p117.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p117);
 
 
@@ -3245,6 +3492,7 @@ namespace test21project.Seeding
 
                 Property p118 = new Property();
 
+                //      p118.PropertyID = 3118;
                 p118.ZipCode = "87205";
                 p118.State = States.WI;
                 p118.Street = "5641 Brenda Streets";
@@ -3259,6 +3507,7 @@ namespace test21project.Seeding
                 p118.Bedrooms = 5;
                 p118.Bathrooms = 6;
                 p118.GuestsAllowed = 12;
+                p118.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -3273,6 +3522,7 @@ namespace test21project.Seeding
 
                 Property p119 = new Property();
 
+                //    p119.PropertyID = 3119;
                 p119.ZipCode = "58221";
                 p119.State = States.ME;
                 p119.Street = "92555 Shaw Spurs";
@@ -3287,10 +3537,11 @@ namespace test21project.Seeding
                 p119.Bedrooms = 7;
                 p119.Bathrooms = 8;
                 p119.GuestsAllowed = 13;
+                p119.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
-                p119.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p119.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p119);
 
 
@@ -3301,6 +3552,7 @@ namespace test21project.Seeding
 
                 Property p120 = new Property();
 
+                //     p120.PropertyID = 3120;
                 p120.ZipCode = "18885";
                 p120.State = States.NY;
                 p120.Street = "559 Foster Locks";
@@ -3315,6 +3567,7 @@ namespace test21project.Seeding
                 p120.Bedrooms = 6;
                 p120.Bathrooms = 6;
                 p120.GuestsAllowed = 6;
+                p120.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -3329,6 +3582,7 @@ namespace test21project.Seeding
 
                 Property p121 = new Property();
 
+                //      p121.PropertyID = 3121;
                 p121.ZipCode = "638";
                 p121.State = States.WY;
                 p121.Street = "4647 Kristine Fields";
@@ -3343,6 +3597,7 @@ namespace test21project.Seeding
                 p121.Bedrooms = 1;
                 p121.Bathrooms = 2;
                 p121.GuestsAllowed = 10;
+                p121.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -3357,9 +3612,11 @@ namespace test21project.Seeding
 
                 Property p122 = new Property();
 
+                //     p122.PropertyID = 3122;
                 p122.ZipCode = "31451";
                 p122.State = States.ME;
                 p122.Street = "92594 Emily Shoals";
+                p122.UnitNumber = "";
                 p122.City = "North Cathyburgh";
                 p122.HostEmail = "rankin@yahoo.com";
                 p122.WeekendPrice = 119.06m;
@@ -3370,6 +3627,7 @@ namespace test21project.Seeding
                 p122.Bedrooms = 6;
                 p122.Bathrooms = 5;
                 p122.GuestsAllowed = 1;
+                p122.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -3384,6 +3642,7 @@ namespace test21project.Seeding
 
                 Property p123 = new Property();
 
+                //      p123.PropertyID = 3123;
                 p123.ZipCode = "26297";
                 p123.State = States.MS;
                 p123.Street = "551 Casey Squares";
@@ -3398,6 +3657,7 @@ namespace test21project.Seeding
                 p123.Bedrooms = 1;
                 p123.Bathrooms = 1;
                 p123.GuestsAllowed = 6;
+                p123.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -3412,9 +3672,11 @@ namespace test21project.Seeding
 
                 Property p124 = new Property();
 
+                //      p124.PropertyID = 3124;
                 p124.ZipCode = "4610";
                 p124.State = States.PA;
                 p124.Street = "2998 Willis Wall";
+                p124.UnitNumber = "";
                 p124.City = "North Brian";
                 p124.HostEmail = "loter@yahoo.com";
                 p124.WeekendPrice = 144.51m;
@@ -3425,6 +3687,7 @@ namespace test21project.Seeding
                 p124.Bedrooms = 3;
                 p124.Bathrooms = 4;
                 p124.GuestsAllowed = 3;
+                p124.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -3439,9 +3702,11 @@ namespace test21project.Seeding
 
                 Property p125 = new Property();
 
+                //        p125.PropertyID = 3125;
                 p125.ZipCode = "86618";
                 p125.State = States.MD;
                 p125.Street = "164 Schultz Road";
+                p125.UnitNumber = "";
                 p125.City = "Lake Bryan";
                 p125.HostEmail = "chung@yahoo.com";
                 p125.WeekendPrice = 233.9m;
@@ -3452,6 +3717,7 @@ namespace test21project.Seeding
                 p125.Bedrooms = 5;
                 p125.Bathrooms = 7;
                 p125.GuestsAllowed = 13;
+                p125.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -3466,6 +3732,7 @@ namespace test21project.Seeding
 
                 Property p126 = new Property();
 
+                //        p126.PropertyID = 3126;
                 p126.ZipCode = "80124";
                 p126.State = States.GA;
                 p126.Street = "9541 Brock Estate";
@@ -3480,6 +3747,7 @@ namespace test21project.Seeding
                 p126.Bedrooms = 2;
                 p126.Bathrooms = 1;
                 p126.GuestsAllowed = 9;
+                p126.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -3494,9 +3762,11 @@ namespace test21project.Seeding
 
                 Property p127 = new Property();
 
+                //    p127.PropertyID = 3127;
                 p127.ZipCode = "63590";
                 p127.State = States.MS;
                 p127.Street = "588 Alan Rest";
+                p127.UnitNumber = "";
                 p127.City = "Port Stephanieville";
                 p127.HostEmail = "ingram@gmail.com";
                 p127.WeekendPrice = 180.86m;
@@ -3507,6 +3777,7 @@ namespace test21project.Seeding
                 p127.Bedrooms = 6;
                 p127.Bathrooms = 6;
                 p127.GuestsAllowed = 12;
+                p127.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -3521,6 +3792,7 @@ namespace test21project.Seeding
 
                 Property p128 = new Property();
 
+                //     p128.PropertyID = 3128;
                 p128.ZipCode = "53548";
                 p128.State = States.MT;
                 p128.Street = "216 Brandon Loop";
@@ -3535,6 +3807,7 @@ namespace test21project.Seeding
                 p128.Bedrooms = 5;
                 p128.Bathrooms = 7;
                 p128.GuestsAllowed = 12;
+                p128.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -3549,9 +3822,11 @@ namespace test21project.Seeding
 
                 Property p129 = new Property();
 
+                //    p129.PropertyID = 3129;
                 p129.ZipCode = "35611";
                 p129.State = States.LA;
                 p129.Street = "782 Dawn Radial";
+                p129.UnitNumber = "";
                 p129.City = "Port Christopher";
                 p129.HostEmail = "ingram@gmail.com";
                 p129.WeekendPrice = 297.25m;
@@ -3562,6 +3837,7 @@ namespace test21project.Seeding
                 p129.Bedrooms = 1;
                 p129.Bathrooms = 3;
                 p129.GuestsAllowed = 1;
+                p129.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -3576,9 +3852,10 @@ namespace test21project.Seeding
 
                 Property p130 = new Property();
 
+                //    p130.PropertyID = 3130;
                 p130.ZipCode = "42879";
                 p130.State = States.WA;
-                p130.Street = "008 Nancy Route";
+                p130.Street = "008 cy Route";
                 p130.UnitNumber = "Suite 228";
                 p130.City = "North Stephanie";
                 p130.HostEmail = "morales@aol.com";
@@ -3590,6 +3867,7 @@ namespace test21project.Seeding
                 p130.Bedrooms = 2;
                 p130.Bathrooms = 3;
                 p130.GuestsAllowed = 3;
+                p130.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -3604,6 +3882,7 @@ namespace test21project.Seeding
 
                 Property p131 = new Property();
 
+                //     p131.PropertyID = 3131;
                 p131.ZipCode = "71569";
                 p131.State = States.MO;
                 p131.Street = "115 Jon Isle";
@@ -3618,10 +3897,11 @@ namespace test21project.Seeding
                 p131.Bedrooms = 1;
                 p131.Bathrooms = 2;
                 p131.GuestsAllowed = 9;
+                p131.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
-                p131.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p131.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p131);
 
 
@@ -3632,6 +3912,7 @@ namespace test21project.Seeding
 
                 Property p132 = new Property();
 
+                //    p132.PropertyID = 3132;
                 p132.ZipCode = "87566";
                 p132.State = States.DE;
                 p132.Street = "132 Poole Pass";
@@ -3646,10 +3927,11 @@ namespace test21project.Seeding
                 p132.Bedrooms = 5;
                 p132.Bathrooms = 6;
                 p132.GuestsAllowed = 11;
+                p132.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
-                p132.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p132.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p132);
 
 
@@ -3660,6 +3942,7 @@ namespace test21project.Seeding
 
                 Property p133 = new Property();
 
+                //    p133.PropertyID = 3133;
                 p133.ZipCode = "67652";
                 p133.State = States.WY;
                 p133.Street = "457 Vargas Island";
@@ -3674,10 +3957,11 @@ namespace test21project.Seeding
                 p133.Bedrooms = 4;
                 p133.Bathrooms = 3;
                 p133.GuestsAllowed = 1;
+                p133.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
-                p133.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p133.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p133);
 
 
@@ -3688,9 +3972,11 @@ namespace test21project.Seeding
 
                 Property p134 = new Property();
 
+                //    p134.PropertyID = 3134;
                 p134.ZipCode = "45184";
                 p134.State = States.HI;
                 p134.Street = "1569 Amy Path";
+                p134.UnitNumber = "";
                 p134.City = "North Ashleyton";
                 p134.HostEmail = "tanner@utexas.edu";
                 p134.WeekendPrice = 111.23m;
@@ -3701,6 +3987,7 @@ namespace test21project.Seeding
                 p134.Bedrooms = 7;
                 p134.Bathrooms = 8;
                 p134.GuestsAllowed = 7;
+                p134.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -3715,6 +4002,7 @@ namespace test21project.Seeding
 
                 Property p135 = new Property();
 
+                //     p135.PropertyID = 3135;
                 p135.ZipCode = "4078";
                 p135.State = States.IL;
                 p135.Street = "0375 Sandra Trace";
@@ -3729,10 +4017,11 @@ namespace test21project.Seeding
                 p135.Bedrooms = 5;
                 p135.Bathrooms = 6;
                 p135.GuestsAllowed = 3;
+                p135.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
-                p135.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p135.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p135);
 
 
@@ -3743,9 +4032,11 @@ namespace test21project.Seeding
 
                 Property p136 = new Property();
 
+                //     p136.PropertyID = 3136;
                 p136.ZipCode = "50437";
                 p136.State = States.MN;
                 p136.Street = "759 Good Port";
+                p136.UnitNumber = "";
                 p136.City = "New Russell";
                 p136.HostEmail = "ingram@gmail.com";
                 p136.WeekendPrice = 208.35m;
@@ -3756,6 +4047,7 @@ namespace test21project.Seeding
                 p136.Bedrooms = 5;
                 p136.Bathrooms = 5;
                 p136.GuestsAllowed = 6;
+                p136.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -3770,9 +4062,11 @@ namespace test21project.Seeding
 
                 Property p137 = new Property();
 
+                //      p137.PropertyID = 3137;
                 p137.ZipCode = "34147";
                 p137.State = States.WV;
                 p137.Street = "3895 Allen Junction";
+                p137.UnitNumber = "";
                 p137.City = "West John";
                 p137.HostEmail = "chung@yahoo.com";
                 p137.WeekendPrice = 195.41m;
@@ -3783,6 +4077,7 @@ namespace test21project.Seeding
                 p137.Bedrooms = 5;
                 p137.Bathrooms = 7;
                 p137.GuestsAllowed = 3;
+                p137.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -3797,9 +4092,11 @@ namespace test21project.Seeding
 
                 Property p138 = new Property();
 
+                //    p138.PropertyID = 3138;
                 p138.ZipCode = "36340";
                 p138.State = States.MS;
                 p138.Street = "7329 Jacobs Station";
+                p138.UnitNumber = "";
                 p138.City = "New Tylerborough";
                 p138.HostEmail = "jacobs@yahoo.com";
                 p138.WeekendPrice = 146.12m;
@@ -3810,6 +4107,7 @@ namespace test21project.Seeding
                 p138.Bedrooms = 1;
                 p138.Bathrooms = 3;
                 p138.GuestsAllowed = 8;
+                p138.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -3824,6 +4122,7 @@ namespace test21project.Seeding
 
                 Property p139 = new Property();
 
+                //  p139.PropertyID = 3139;
                 p139.ZipCode = "88806";
                 p139.State = States.MD;
                 p139.Street = "5003 Cassandra Estates";
@@ -3838,10 +4137,11 @@ namespace test21project.Seeding
                 p139.Bedrooms = 7;
                 p139.Bathrooms = 7;
                 p139.GuestsAllowed = 9;
+                p139.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
-                p139.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p139.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p139);
 
 
@@ -3852,6 +4152,7 @@ namespace test21project.Seeding
 
                 Property p140 = new Property();
 
+                //   p140.PropertyID = 3140;
                 p140.ZipCode = "76853";
                 p140.State = States.TN;
                 p140.Street = "10524 Parker Mall";
@@ -3866,10 +4167,11 @@ namespace test21project.Seeding
                 p140.Bedrooms = 5;
                 p140.Bathrooms = 7;
                 p140.GuestsAllowed = 13;
+                p140.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
-                p140.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel Room");
+                p140.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Hotel");
                 Properties.Add(p140);
 
 
@@ -3880,9 +4182,11 @@ namespace test21project.Seeding
 
                 Property p141 = new Property();
 
+                //   p141.PropertyID = 3141;
                 p141.ZipCode = "93533";
                 p141.State = States.MO;
                 p141.Street = "300 Madison Stream";
+                p141.UnitNumber = "";
                 p141.City = "Christophershire";
                 p141.HostEmail = "loter@yahoo.com";
                 p141.WeekendPrice = 187.08m;
@@ -3893,6 +4197,7 @@ namespace test21project.Seeding
                 p141.Bedrooms = 3;
                 p141.Bathrooms = 4;
                 p141.GuestsAllowed = 6;
+                p141.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -3907,9 +4212,11 @@ namespace test21project.Seeding
 
                 Property p142 = new Property();
 
+                //      p142.PropertyID = 3142;
                 p142.ZipCode = "96763";
                 p142.State = States.FL;
                 p142.Street = "4229 Derrick Wells";
+                p142.UnitNumber = "";
                 p142.City = "West Tyler";
                 p142.HostEmail = "martinez@aol.com";
                 p142.WeekendPrice = 241.45m;
@@ -3920,6 +4227,7 @@ namespace test21project.Seeding
                 p142.Bedrooms = 2;
                 p142.Bathrooms = 4;
                 p142.GuestsAllowed = 6;
+                p142.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -3934,9 +4242,11 @@ namespace test21project.Seeding
 
                 Property p143 = new Property();
 
+                //     p143.PropertyID = 3143;
                 p143.ZipCode = "92174";
                 p143.State = States.VA;
                 p143.Street = "26239 Michael Shoals";
+                p143.UnitNumber = "";
                 p143.City = "Gregoryview";
                 p143.HostEmail = "morales@aol.com";
                 p143.WeekendPrice = 111.91m;
@@ -3947,6 +4257,7 @@ namespace test21project.Seeding
                 p143.Bedrooms = 1;
                 p143.Bathrooms = 2;
                 p143.GuestsAllowed = 9;
+                p143.User = db.Users.FirstOrDefault(p => p.UserName == "morales@aol.com");
 
 
 
@@ -3961,6 +4272,7 @@ namespace test21project.Seeding
 
                 Property p144 = new Property();
 
+                //   p144.PropertyID = 3144;
                 p144.ZipCode = "88294";
                 p144.State = States.IN;
                 p144.Street = "302 Joy Spring";
@@ -3975,6 +4287,7 @@ namespace test21project.Seeding
                 p144.Bedrooms = 1;
                 p144.Bathrooms = 3;
                 p144.GuestsAllowed = 12;
+                p144.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -3989,6 +4302,7 @@ namespace test21project.Seeding
 
                 Property p145 = new Property();
 
+                //    p145.PropertyID = 3145;
                 p145.ZipCode = "23464";
                 p145.State = States.CA;
                 p145.Street = "734 Craig Overpass";
@@ -4003,6 +4317,7 @@ namespace test21project.Seeding
                 p145.Bedrooms = 1;
                 p145.Bathrooms = 3;
                 p145.GuestsAllowed = 8;
+                p145.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -4017,9 +4332,11 @@ namespace test21project.Seeding
 
                 Property p146 = new Property();
 
+                //     p146.PropertyID = 3146;
                 p146.ZipCode = "35243";
                 p146.State = States.CA;
                 p146.Street = "272 Green Street";
+                p146.UnitNumber = "";
                 p146.City = "Port Lacey";
                 p146.HostEmail = "martinez@aol.com";
                 p146.WeekendPrice = 247.34m;
@@ -4030,6 +4347,7 @@ namespace test21project.Seeding
                 p146.Bedrooms = 4;
                 p146.Bathrooms = 3;
                 p146.GuestsAllowed = 7;
+                p146.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -4044,6 +4362,7 @@ namespace test21project.Seeding
 
                 Property p147 = new Property();
 
+                //     p147.PropertyID = 3147;
                 p147.ZipCode = "61935";
                 p147.State = States.IL;
                 p147.Street = "8056 Dunn Trail";
@@ -4058,6 +4377,7 @@ namespace test21project.Seeding
                 p147.Bedrooms = 5;
                 p147.Bathrooms = 6;
                 p147.GuestsAllowed = 2;
+                p147.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -4072,9 +4392,11 @@ namespace test21project.Seeding
 
                 Property p148 = new Property();
 
+                //     p148.PropertyID = 3148;
                 p148.ZipCode = "72324";
                 p148.State = States.CA;
                 p148.Street = "86187 Antonio Fort";
+                p148.UnitNumber = "";
                 p148.City = "North Carmen";
                 p148.HostEmail = "tanner@utexas.edu";
                 p148.WeekendPrice = 109.87m;
@@ -4085,6 +4407,7 @@ namespace test21project.Seeding
                 p148.Bedrooms = 7;
                 p148.Bathrooms = 9;
                 p148.GuestsAllowed = 7;
+                p148.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -4099,9 +4422,11 @@ namespace test21project.Seeding
 
                 Property p149 = new Property();
 
+                //    p149.PropertyID = 3149;
                 p149.ZipCode = "84393";
                 p149.State = States.NJ;
                 p149.Street = "71318 Cassandra Plaza";
+                p149.UnitNumber = "";
                 p149.City = "Burkeview";
                 p149.HostEmail = "loter@yahoo.com";
                 p149.WeekendPrice = 227.55m;
@@ -4112,6 +4437,7 @@ namespace test21project.Seeding
                 p149.Bedrooms = 7;
                 p149.Bathrooms = 7;
                 p149.GuestsAllowed = 10;
+                p149.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -4126,9 +4452,11 @@ namespace test21project.Seeding
 
                 Property p150 = new Property();
 
+                //  p150.PropertyID = 3150;
                 p150.ZipCode = "62346";
                 p150.State = States.NH;
                 p150.Street = "5303 Lewis Springs";
+                p150.UnitNumber = "";
                 p150.City = "Port Adrian";
                 p150.HostEmail = "tanner@utexas.edu";
                 p150.WeekendPrice = 207.51m;
@@ -4139,6 +4467,7 @@ namespace test21project.Seeding
                 p150.Bedrooms = 2;
                 p150.Bathrooms = 1;
                 p150.GuestsAllowed = 2;
+                p150.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -4153,6 +4482,7 @@ namespace test21project.Seeding
 
                 Property p151 = new Property();
 
+                //    p151.PropertyID = 3151;
                 p151.ZipCode = "2837";
                 p151.State = States.IA;
                 p151.Street = "465 Wiley Corners";
@@ -4167,6 +4497,7 @@ namespace test21project.Seeding
                 p151.Bedrooms = 6;
                 p151.Bathrooms = 5;
                 p151.GuestsAllowed = 11;
+                p151.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -4181,9 +4512,11 @@ namespace test21project.Seeding
 
                 Property p152 = new Property();
 
+                //    p152.PropertyID = 3152;
                 p152.ZipCode = "68847";
                 p152.State = States.LA;
                 p152.Street = "521 Flores Stream";
+                p152.UnitNumber = "";
                 p152.City = "West Rebeccaborough";
                 p152.HostEmail = "rankin@yahoo.com";
                 p152.WeekendPrice = 254.37m;
@@ -4194,6 +4527,7 @@ namespace test21project.Seeding
                 p152.Bedrooms = 3;
                 p152.Bathrooms = 5;
                 p152.GuestsAllowed = 3;
+                p152.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -4208,6 +4542,7 @@ namespace test21project.Seeding
 
                 Property p153 = new Property();
 
+                //    p153.PropertyID = 3153;
                 p153.ZipCode = "35218";
                 p153.State = States.NE;
                 p153.Street = "0271 Soto Drives";
@@ -4222,6 +4557,7 @@ namespace test21project.Seeding
                 p153.Bedrooms = 4;
                 p153.Bathrooms = 5;
                 p153.GuestsAllowed = 9;
+                p153.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -4236,9 +4572,11 @@ namespace test21project.Seeding
 
                 Property p154 = new Property();
 
+                //    p154.PropertyID = 3154;
                 p154.ZipCode = "32697";
                 p154.State = States.NM;
                 p154.Street = "27862 Kent Mountains";
+                p154.UnitNumber = "";
                 p154.City = "Lake Michaelville";
                 p154.HostEmail = "jacobs@yahoo.com";
                 p154.WeekendPrice = 153.38m;
@@ -4249,6 +4587,7 @@ namespace test21project.Seeding
                 p154.Bedrooms = 6;
                 p154.Bathrooms = 5;
                 p154.GuestsAllowed = 14;
+                p154.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -4263,9 +4602,11 @@ namespace test21project.Seeding
 
                 Property p155 = new Property();
 
+                //    p155.PropertyID = 3155;
                 p155.ZipCode = "95889";
                 p155.State = States.OR;
                 p155.Street = "917 Mclaughlin Glens";
+                p155.UnitNumber = "";
                 p155.City = "Martinville";
                 p155.HostEmail = "rankin@yahoo.com";
                 p155.WeekendPrice = 226.89m;
@@ -4276,6 +4617,7 @@ namespace test21project.Seeding
                 p155.Bedrooms = 7;
                 p155.Bathrooms = 6;
                 p155.GuestsAllowed = 2;
+                p155.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -4290,9 +4632,11 @@ namespace test21project.Seeding
 
                 Property p156 = new Property();
 
+                //   p156.PropertyID = 3156;
                 p156.ZipCode = "82153";
                 p156.State = States.KY;
                 p156.Street = "3032 Michelle Drives";
+                p156.UnitNumber = "";
                 p156.City = "North Daniel";
                 p156.HostEmail = "rankin@yahoo.com";
                 p156.WeekendPrice = 157.15m;
@@ -4303,6 +4647,7 @@ namespace test21project.Seeding
                 p156.Bedrooms = 3;
                 p156.Bathrooms = 4;
                 p156.GuestsAllowed = 13;
+                p156.User = db.Users.FirstOrDefault(p => p.UserName == "rankin@yahoo.com");
 
 
 
@@ -4317,6 +4662,7 @@ namespace test21project.Seeding
 
                 Property p157 = new Property();
 
+                //   p157.PropertyID = 3157;
                 p157.ZipCode = "32202";
                 p157.State = States.SD;
                 p157.Street = "601 Maria Mission";
@@ -4331,6 +4677,7 @@ namespace test21project.Seeding
                 p157.Bedrooms = 7;
                 p157.Bathrooms = 9;
                 p157.GuestsAllowed = 9;
+                p157.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -4345,9 +4692,11 @@ namespace test21project.Seeding
 
                 Property p158 = new Property();
 
+                //   p158.PropertyID = 3158;
                 p158.ZipCode = "17431";
                 p158.State = States.OH;
                 p158.Street = "238 Shawn Well";
+                p158.UnitNumber = "";
                 p158.City = "Port Johnshire";
                 p158.HostEmail = "ingram@gmail.com";
                 p158.WeekendPrice = 112.64m;
@@ -4358,6 +4707,7 @@ namespace test21project.Seeding
                 p158.Bedrooms = 7;
                 p158.Bathrooms = 8;
                 p158.GuestsAllowed = 14;
+                p158.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -4372,6 +4722,7 @@ namespace test21project.Seeding
 
                 Property p159 = new Property();
 
+                //   p159.PropertyID = 3159;
                 p159.ZipCode = "37901";
                 p159.State = States.SC;
                 p159.Street = "41743 Berger Inlet";
@@ -4386,6 +4737,7 @@ namespace test21project.Seeding
                 p159.Bedrooms = 7;
                 p159.Bathrooms = 9;
                 p159.GuestsAllowed = 9;
+                p159.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -4400,6 +4752,7 @@ namespace test21project.Seeding
 
                 Property p160 = new Property();
 
+                //     p160.PropertyID = 3160;
                 p160.ZipCode = "17895";
                 p160.State = States.MO;
                 p160.Street = "9983 Mary Grove";
@@ -4414,6 +4767,7 @@ namespace test21project.Seeding
                 p160.Bedrooms = 7;
                 p160.Bathrooms = 6;
                 p160.GuestsAllowed = 9;
+                p160.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -4428,6 +4782,7 @@ namespace test21project.Seeding
 
                 Property p161 = new Property();
 
+                //       p161.PropertyID = 3161;
                 p161.ZipCode = "90576";
                 p161.State = States.HI;
                 p161.Street = "03541 Ryan Islands";
@@ -4442,6 +4797,7 @@ namespace test21project.Seeding
                 p161.Bedrooms = 1;
                 p161.Bathrooms = 2;
                 p161.GuestsAllowed = 10;
+                p161.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -4456,6 +4812,7 @@ namespace test21project.Seeding
 
                 Property p162 = new Property();
 
+                //   p162.PropertyID = 3162;
                 p162.ZipCode = "94980";
                 p162.State = States.SC;
                 p162.Street = "6591 Angela Mission";
@@ -4470,6 +4827,7 @@ namespace test21project.Seeding
                 p162.Bedrooms = 5;
                 p162.Bathrooms = 6;
                 p162.GuestsAllowed = 14;
+                p162.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -4484,9 +4842,11 @@ namespace test21project.Seeding
 
                 Property p163 = new Property();
 
+                //   p163.PropertyID = 3163;
                 p163.ZipCode = "44974";
                 p163.State = States.CO;
                 p163.Street = "492 Ramirez Crossing";
+                p163.UnitNumber = "";
                 p163.City = "Aaronberg";
                 p163.HostEmail = "rice@yahoo.com";
                 p163.WeekendPrice = 144.6m;
@@ -4497,6 +4857,7 @@ namespace test21project.Seeding
                 p163.Bedrooms = 1;
                 p163.Bathrooms = 2;
                 p163.GuestsAllowed = 10;
+                p163.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -4511,6 +4872,7 @@ namespace test21project.Seeding
 
                 Property p164 = new Property();
 
+                //  p164.PropertyID = 3164;
                 p164.ZipCode = "66170";
                 p164.State = States.DE;
                 p164.Street = "35974 Sharon Locks";
@@ -4525,6 +4887,7 @@ namespace test21project.Seeding
                 p164.Bedrooms = 7;
                 p164.Bathrooms = 9;
                 p164.GuestsAllowed = 1;
+                p164.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -4539,9 +4902,11 @@ namespace test21project.Seeding
 
                 Property p165 = new Property();
 
+                //   p165.PropertyID = 3165;
                 p165.ZipCode = "22495";
                 p165.State = States.UT;
                 p165.Street = "89403 Gabriella Mills";
+                p165.UnitNumber = "";
                 p165.City = "East Steven";
                 p165.HostEmail = "gonzalez@aol.com";
                 p165.WeekendPrice = 155.1m;
@@ -4552,6 +4917,7 @@ namespace test21project.Seeding
                 p165.Bedrooms = 3;
                 p165.Bathrooms = 4;
                 p165.GuestsAllowed = 11;
+                p165.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -4566,9 +4932,11 @@ namespace test21project.Seeding
 
                 Property p166 = new Property();
 
+                //   p166.PropertyID = 3166;
                 p166.ZipCode = "85059";
                 p166.State = States.NH;
                 p166.Street = "601 Kyle Roads";
+                p166.UnitNumber = "";
                 p166.City = "Clarkfurt";
                 p166.HostEmail = "tanner@utexas.edu";
                 p166.WeekendPrice = 284.39m;
@@ -4579,6 +4947,7 @@ namespace test21project.Seeding
                 p166.Bedrooms = 4;
                 p166.Bathrooms = 5;
                 p166.GuestsAllowed = 4;
+                p166.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -4593,6 +4962,7 @@ namespace test21project.Seeding
 
                 Property p167 = new Property();
 
+                //   p167.PropertyID = 3167;
                 p167.ZipCode = "61092";
                 p167.State = States.IN;
                 p167.Street = "60969 Justin Passage";
@@ -4607,6 +4977,7 @@ namespace test21project.Seeding
                 p167.Bedrooms = 1;
                 p167.Bathrooms = 1;
                 p167.GuestsAllowed = 7;
+                p167.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -4621,9 +4992,11 @@ namespace test21project.Seeding
 
                 Property p168 = new Property();
 
+                //   p168.PropertyID = 3168;
                 p168.ZipCode = "43986";
                 p168.State = States.PA;
                 p168.Street = "7943 Tina Mount";
+                p168.UnitNumber = "";
                 p168.City = "East Lisa";
                 p168.HostEmail = "gonzalez@aol.com";
                 p168.WeekendPrice = 104.47m;
@@ -4634,6 +5007,7 @@ namespace test21project.Seeding
                 p168.Bedrooms = 4;
                 p168.Bathrooms = 3;
                 p168.GuestsAllowed = 14;
+                p168.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -4648,9 +5022,11 @@ namespace test21project.Seeding
 
                 Property p169 = new Property();
 
+                //  p169.PropertyID = 3169;
                 p169.ZipCode = "91397";
                 p169.State = States.NC;
                 p169.Street = "6775 James Ford";
+                p169.UnitNumber = "";
                 p169.City = "South Victorialand";
                 p169.HostEmail = "jacobs@yahoo.com";
                 p169.WeekendPrice = 275.5m;
@@ -4661,6 +5037,7 @@ namespace test21project.Seeding
                 p169.Bedrooms = 1;
                 p169.Bathrooms = 3;
                 p169.GuestsAllowed = 9;
+                p169.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -4675,6 +5052,7 @@ namespace test21project.Seeding
 
                 Property p170 = new Property();
 
+                //  p170.PropertyID = 3170;
                 p170.ZipCode = "67849";
                 p170.State = States.VT;
                 p170.Street = "431 Johnson Neck";
@@ -4689,6 +5067,7 @@ namespace test21project.Seeding
                 p170.Bedrooms = 1;
                 p170.Bathrooms = 1;
                 p170.GuestsAllowed = 9;
+                p170.User = db.Users.FirstOrDefault(p => p.UserName == "rice@yahoo.com");
 
 
 
@@ -4703,9 +5082,11 @@ namespace test21project.Seeding
 
                 Property p171 = new Property();
 
+                //    p171.PropertyID = 3171;
                 p171.ZipCode = "20687";
                 p171.State = States.NM;
                 p171.Street = "15666 Justin Locks";
+                p171.UnitNumber = "";
                 p171.City = "Lake Ryanport";
                 p171.HostEmail = "tanner@utexas.edu";
                 p171.WeekendPrice = 112.05m;
@@ -4716,6 +5097,7 @@ namespace test21project.Seeding
                 p171.Bedrooms = 6;
                 p171.Bathrooms = 6;
                 p171.GuestsAllowed = 3;
+                p171.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
@@ -4730,6 +5112,7 @@ namespace test21project.Seeding
 
                 Property p172 = new Property();
 
+                //    p172.PropertyID = 3172;
                 p172.ZipCode = "30222";
                 p172.State = States.TX;
                 p172.Street = "9947 Torres Viaduct";
@@ -4744,6 +5127,7 @@ namespace test21project.Seeding
                 p172.Bedrooms = 1;
                 p172.Bathrooms = 2;
                 p172.GuestsAllowed = 11;
+                p172.User = db.Users.FirstOrDefault(p => p.UserName == "ingram@gmail.com");
 
 
 
@@ -4758,9 +5142,11 @@ namespace test21project.Seeding
 
                 Property p173 = new Property();
 
+                //   p173.PropertyID = 3173;
                 p173.ZipCode = "21190";
                 p173.State = States.NJ;
                 p173.Street = "20866 Keith Mill";
+                p173.UnitNumber = "";
                 p173.City = "Susanton";
                 p173.HostEmail = "chung@yahoo.com";
                 p173.WeekendPrice = 174.06m;
@@ -4771,6 +5157,7 @@ namespace test21project.Seeding
                 p173.Bedrooms = 2;
                 p173.Bathrooms = 4;
                 p173.GuestsAllowed = 10;
+                p173.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -4785,6 +5172,7 @@ namespace test21project.Seeding
 
                 Property p174 = new Property();
 
+                //  p174.PropertyID = 3174;
                 p174.ZipCode = "4838";
                 p174.State = States.AL;
                 p174.Street = "04374 Nicholas Cliff";
@@ -4799,6 +5187,7 @@ namespace test21project.Seeding
                 p174.Bedrooms = 1;
                 p174.Bathrooms = 1;
                 p174.GuestsAllowed = 10;
+                p174.User = db.Users.FirstOrDefault(p => p.UserName == "jacobs@yahoo.com");
 
 
 
@@ -4813,9 +5202,11 @@ namespace test21project.Seeding
 
                 Property p175 = new Property();
 
+                //      p175.PropertyID = 3175;
                 p175.ZipCode = "80130";
                 p175.State = States.CA;
                 p175.Street = "271 Andrew Summit";
+                p175.UnitNumber = "";
                 p175.City = "Port Craig";
                 p175.HostEmail = "gonzalez@aol.com";
                 p175.WeekendPrice = 148.39m;
@@ -4826,6 +5217,7 @@ namespace test21project.Seeding
                 p175.Bedrooms = 7;
                 p175.Bathrooms = 6;
                 p175.GuestsAllowed = 7;
+                p175.User = db.Users.FirstOrDefault(p => p.UserName == "gonzalez@aol.com");
 
 
 
@@ -4840,9 +5232,11 @@ namespace test21project.Seeding
 
                 Property p176 = new Property();
 
+                //     p176.PropertyID = 3176;
                 p176.ZipCode = "96166";
                 p176.State = States.MN;
                 p176.Street = "17611 Robbins Mission";
+                p176.UnitNumber = "";
                 p176.City = "New Curtis";
                 p176.HostEmail = "loter@yahoo.com";
                 p176.WeekendPrice = 286.13m;
@@ -4853,6 +5247,7 @@ namespace test21project.Seeding
                 p176.Bedrooms = 3;
                 p176.Bathrooms = 3;
                 p176.GuestsAllowed = 9;
+                p176.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -4867,9 +5262,11 @@ namespace test21project.Seeding
 
                 Property p177 = new Property();
 
+                //     p177.PropertyID = 3177;
                 p177.ZipCode = "40702";
                 p177.State = States.MO;
                 p177.Street = "80831 Kemp Pines";
+                p177.UnitNumber = "";
                 p177.City = "Annashire";
                 p177.HostEmail = "loter@yahoo.com";
                 p177.WeekendPrice = 123.93m;
@@ -4880,6 +5277,7 @@ namespace test21project.Seeding
                 p177.Bedrooms = 1;
                 p177.Bathrooms = 2;
                 p177.GuestsAllowed = 7;
+                p177.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -4894,9 +5292,11 @@ namespace test21project.Seeding
 
                 Property p178 = new Property();
 
+                //       p178.PropertyID = 3178;
                 p178.ZipCode = "86023";
                 p178.State = States.IL;
                 p178.Street = "96545 Smith Alley";
+                p178.UnitNumber = "";
                 p178.City = "West Joy";
                 p178.HostEmail = "martinez@aol.com";
                 p178.WeekendPrice = 254.38m;
@@ -4907,6 +5307,7 @@ namespace test21project.Seeding
                 p178.Bedrooms = 6;
                 p178.Bathrooms = 8;
                 p178.GuestsAllowed = 7;
+                p178.User = db.Users.FirstOrDefault(p => p.UserName == "martinez@aol.com");
 
 
 
@@ -4921,9 +5322,11 @@ namespace test21project.Seeding
 
                 Property p179 = new Property();
 
+                //        p179.PropertyID = 3179;
                 p179.ZipCode = "70897";
                 p179.State = States.MT;
                 p179.Street = "6146 Johnson Isle";
+                p179.UnitNumber = "";
                 p179.City = "South Arthur";
                 p179.HostEmail = "chung@yahoo.com";
                 p179.WeekendPrice = 228.04m;
@@ -4934,6 +5337,7 @@ namespace test21project.Seeding
                 p179.Bedrooms = 2;
                 p179.Bathrooms = 4;
                 p179.GuestsAllowed = 1;
+                p179.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -4948,9 +5352,11 @@ namespace test21project.Seeding
 
                 Property p180 = new Property();
 
+                //    p180.PropertyID = 3180;
                 p180.ZipCode = "69154";
                 p180.State = States.MN;
                 p180.Street = "0415 Smith Springs";
+                p180.UnitNumber = "";
                 p180.City = "Jeremyburgh";
                 p180.HostEmail = "loter@yahoo.com";
                 p180.WeekendPrice = 228.81m;
@@ -4961,6 +5367,7 @@ namespace test21project.Seeding
                 p180.Bedrooms = 4;
                 p180.Bathrooms = 4;
                 p180.GuestsAllowed = 3;
+                p180.User = db.Users.FirstOrDefault(p => p.UserName == "loter@yahoo.com");
 
 
 
@@ -4975,9 +5382,11 @@ namespace test21project.Seeding
 
                 Property p181 = new Property();
 
+                //      p181.PropertyID = 3181;
                 p181.ZipCode = "53524";
                 p181.State = States.HI;
                 p181.Street = "3999 Ricky Via";
+                p181.UnitNumber = "";
                 p181.City = "West Adamburgh";
                 p181.HostEmail = "chung@yahoo.com";
                 p181.WeekendPrice = 255.43m;
@@ -4988,6 +5397,7 @@ namespace test21project.Seeding
                 p181.Bedrooms = 7;
                 p181.Bathrooms = 6;
                 p181.GuestsAllowed = 6;
+                p181.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -5002,9 +5412,11 @@ namespace test21project.Seeding
 
                 Property p182 = new Property();
 
+                //    p182.PropertyID = 3182;
                 p182.ZipCode = "24886";
                 p182.State = States.MN;
                 p182.Street = "83787 Stuart Key";
+                p182.UnitNumber = "";
                 p182.City = "Davetown";
                 p182.HostEmail = "chung@yahoo.com";
                 p182.WeekendPrice = 146.75m;
@@ -5015,6 +5427,7 @@ namespace test21project.Seeding
                 p182.Bedrooms = 7;
                 p182.Bathrooms = 6;
                 p182.GuestsAllowed = 4;
+                p182.User = db.Users.FirstOrDefault(p => p.UserName == "chung@yahoo.com");
 
 
 
@@ -5029,9 +5442,11 @@ namespace test21project.Seeding
 
                 Property p183 = new Property();
 
+                //    p183.PropertyID = 3183;
                 p183.ZipCode = "56713";
                 p183.State = States.TX;
                 p183.Street = "690 Christina Park";
+                p183.UnitNumber = "";
                 p183.City = "Toddburgh";
                 p183.HostEmail = "tanner@utexas.edu";
                 p183.WeekendPrice = 157.96m;
@@ -5042,11 +5457,14 @@ namespace test21project.Seeding
                 p183.Bedrooms = 3;
                 p183.Bathrooms = 5;
                 p183.GuestsAllowed = 1;
+                p183.User = db.Users.FirstOrDefault(p => p.UserName == "tanner@utexas.edu");
 
 
 
                 p183.Category = db.Categories.FirstOrDefault(c => c.CategoryType == "Cabin");
                 Properties.Add(p183);
+
+
 
                 try
                 {
