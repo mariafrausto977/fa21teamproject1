@@ -18,7 +18,7 @@ namespace test21project
             //This adds the MVC engine and Razor code
             services.AddControllersWithViews();
 
-            String connectionString = "Server=tcp:testfinal1.database.windows.net,1433;Initial Catalog=test1;Persist Security Info=False;User ID=MISAdmin;Password=Password123;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            String connectionString = "Server=tcp:testfinal1.database.windows.net,1433;Initial Catalog=testfinal1;Persist Security Info=False;User ID=MISAdmin;Password=Password123;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 
