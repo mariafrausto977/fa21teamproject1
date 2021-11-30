@@ -1,0 +1,60 @@
+﻿@model test21project.Models.Checkout
+
+@{ ViewData["Title"] = "Details"; }
+
+<h1>Details</h1>
+
+<div>
+    <h4>Checkout</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CheckoutStatus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CheckoutStatus)
+        </dd>
+    </dl>
+</div>
+<h5>Properties on this Reservation</h5>
+<table class="table table-primary">
+    <tr>
+        <th>Course Number</th>
+        <th>Fee</th>
+        <th># of Students</th>
+        <th>Extended Price</th>
+    </tr>
+    @foreach (Reservation rd in Model.Reservations)
+    {
+<tr>
+    <td>@Html.DisplayFor(ModelItem => rd.Checkout.CheckoutNumber)</td>
+    <td>@Html.DisplayFor(ModelItem => rd.ReservationSubtotal)</td>
+    <td>@Html.DisplayFor(ModelItem => rd.Taxes)</td>
+</tr>}
+</table>
+<h5>Checkout Summary</h5>
+<table class="table table-sm table-bordered" style="width:30%">
+    <tr>
+        <th colspan="2" style="text-align:center">Checkout Summary</th>
+    </tr>
+    <tr>
+        <td>Grand Total:</td>
+        <td>@Html.DisplayFor(model => model.GrandTotal)</td>
+    </tr>
+</table>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CheckoutID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
